@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>嚴幼喬 — 2D 動畫師</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       導覽列
+  ══════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">Y.Y.C</a>
+      <button class="nav-toggle" aria-label="開啟選單">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#hero">首頁</a></li>
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#skills">興趣與專長</a></li>
+        <li><a href="#works">作品集</a></li>
+        <li><a href="#future">未來規劃</a></li>
+        <li><a href="#contact">聯絡我</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════
+       區塊一｜首頁英雄區
+  ══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-noise"></div>
+
+    <!-- 裝飾性小字排版（仿參考圖左右兩側的細小文字） -->
+    <div class="hero-side-text left">
+      <span>MULTIMEDIA ANIMATION — 2D ANIMATOR</span>
+    </div>
+    <div class="hero-side-text right">
+      <span>DRAWING THE WORLDS WITHIN THE MIND</span>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-label">Portfolio · 2026</p>
+      <h1 class="hero-name">嚴幼喬</h1>
+      <p class="hero-name-en">YEN YU-CHIAO</p>
+      <p class="hero-tagline">動畫就是把腦海中的世界<em>畫出來</em></p>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">2D Animator · Multimedia Animation · Blender · Maya</p>
+      <a href="#about" class="hero-btn">進入作品世界</a>
+    </div>
+
+    <!-- 個人照片佔位框（替換說明） -->
+    <div class="hero-photo-frame">
+      <div class="hero-photo-placeholder">
+        <img src="images/profile.jpg" alt="嚴幼喬個人照" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <div class="photo-fallback">
+          <span>個人照片</span>
+          <small>請替換 images/profile.jpg</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       區塊二｜關於我
+  ══════════════════════════════ -->
+  <section id="about">
+    <div class="section-label-top">— 02 · About Me</div>
+    <div class="container about-grid">
+
+      <div class="about-left">
+        <h2 class="section-title">關於我</h2>
+        <p class="about-intro">
+          我是一名就讀<strong>多媒體動畫系</strong>的學生，主要方向是
+          <strong>2D 動畫</strong>的繪製與分鏡規劃，同時也接觸
+          <strong>3D 場景搭建</strong>，試著從不同維度去理解空間感與畫面構成。
+        </p>
+        <p class="about-intro">
+          動畫對我來說不只是技術，而是一種語言——用畫面說出那些難以言語的故事。
+          目前正努力挑戰更多能力的邊界，也在學習<strong>日語</strong>，
+          希望未來能更接近日本動畫產業的製作模式。
+        </p>
+
+        <!-- 個人特質標籤 -->
+        <div class="trait-tags">
+          <span class="tag">觀察型思考者</span>
+          <span class="tag">細節控</span>
+          <span class="tag">持續學習</span>
+          <span class="tag">故事力</span>
+          <span class="tag">日語學習中</span>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <!-- 時間軸 -->
+        <div class="timeline">
+          <h3 class="timeline-title">學習歷程</h3>
+
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">高中</span>
+              <p>開始接觸數位繪圖，使用 Procreate 進行插畫練習，奠定手感與色彩概念</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">大學 Year 1</span>
+              <p>進入多媒體動畫系，學習 Adobe After Effects、Tahoma 2D，開始製作2D逐格動畫</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">大學 Year 2</span>
+              <p>擴展至 OpenToonz、Procreate Dreams，並開始學習 Blender 3D 場景建模，同步學習日語中</p>
+            </div>
+          </div>
+
+          <div class="timeline-item active">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <span class="tl-year">現在</span>
+              <p>持續深化 2D 動畫技術，同時鑽研人體解剖學與 Maya 進階應用</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       區塊三｜興趣與專長
+  ══════════════════════════════ -->
+  <section id="skills">
+    <div class="section-label-top">— 03 · Skills &amp; Interests</div>
+    <div class="container">
+      <h2 class="section-title">興趣與專長</h2>
+
+      <!-- 工具卡片 -->
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">✦</div>
+          <h3>2D 動畫製作</h3>
+          <ul>
+            <li>Tahoma 2D</li>
+            <li>OpenToonz</li>
+            <li>Procreate Dreams</li>
+            <li>Clip Studio Paint</li>
+          </ul>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">◈</div>
+          <h3>動態影像</h3>
+          <ul>
+            <li>Adobe After Effects</li>
+            <li>影像合成與特效</li>
+            <li>分鏡規劃</li>
+          </ul>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">◉</div>
+          <h3>數位插畫</h3>
+          <ul>
+            <li>Procreate</li>
+            <li>Clip Studio Paint</li>
+            <li>角色設計</li>
+          </ul>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⬡</div>
+          <h3>3D 建模</h3>
+          <ul>
+            <li>Blender（場景搭建）</li>
+            <li>Maya（進階學習中）</li>
+          </ul>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:45%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">語</div>
+          <h3>語言</h3>
+          <ul>
+            <li>中文（母語）</li>
+            <li>英文（日常溝通）</li>
+            <li>日語（學習中 · 目標 N4）</li>
+          </ul>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:30%"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">♪</div>
+          <h3>其他興趣</h3>
+          <ul>
+            <li>觀賞日本動畫</li>
+            <li>人物速寫練習</li>
+            <li>音樂欣賞</li>
+          </ul>
+          <div class="skill-bar"><div class="skill-fill" style="--pct:90%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       區塊四｜作品集
+  ══════════════════════════════ -->
+  <section id="works">
+    <div class="section-label-top">— 04 · Portfolio</div>
+    <div class="container">
+      <h2 class="section-title">作品集</h2>
+
+      <!-- 作品集分類 Tab -->
+      <div class="works-tabs">
+        <button class="tab-btn active" data-tab="flat">平面作品</button>
+        <button class="tab-btn" data-tab="anim-hs">動態作品 · 高中階段</button>
+        <button class="tab-btn" data-tab="anim-uni">動態作品 · 大學階段</button>
+      </div>
+
+      <!-- ── 平面作品 ── -->
+      <div class="tab-panel active" id="tab-flat">
+        <div class="works-grid">
+
+          <div class="work-card">
+            <div class="work-img-wrap">
+              <img src="works/flat-01.jpg" alt="平面作品1" onerror="this.src=''; this.parentElement.classList.add('no-img')" />
+              <div class="work-img-placeholder">請替換<br>works/flat-01.jpg</div>
+            </div>
+            <div class="work-info">
+              <h4>作品名稱一</h4>
+              <p class="work-tools">工具：Clip Studio Paint · Procreate</p>
+              <p class="work-desc">簡短說明這件作品的主題、製作目的與學習心得。請替換此段文字為真實內容。</p>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="work-img-wrap">
+              <img src="works/flat-02.jpg" alt="平面作品2" onerror="this.src=''; this.parentElement.classList.add('no-img')" />
+              <div class="work-img-placeholder">請替換<br>works/flat-02.jpg</div>
+            </div>
+            <div class="work-info">
+              <h4>作品名稱二</h4>
+              <p class="work-tools">工具：Procreate</p>
+              <p class="work-desc">簡短說明這件作品的主題、製作目的與學習心得。請替換此段文字為真實內容。</p>
+            </div>
+          </div>
+
+          <div class="work-card">
+            <div class="work-img-wrap">
+              <img src="works/flat-03.jpg" alt="平面作品3" onerror="this.src=''; this.parentElement.classList.add('no-img')" />
+              <div class="work-img-placeholder">請替換<br>works/flat-03.jpg</div>
+            </div>
+            <div class="work-info">
+              <h4>作品名稱三</h4>
+              <p class="work-tools">工具：Clip Studio Paint</p>
+              <p class="work-desc">簡短說明這件作品的主題、製作目的與學習心得。請替換此段文字為真實內容。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── 動態作品 · 高中階段 ── -->
+      <div class="tab-panel" id="tab-anim-hs">
+        <p class="stage-desc">高中時期的動畫習作，記錄最初接觸動態影像的摸索過程。</p>
+        <div class="works-grid">
+
+          <!-- 高中作品一：GIF 格式範例 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <img class="media-gif" src="works/hs-anim-01.gif" alt="高中動畫習作一"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+              <div class="media-placeholder">
+                <span>請放入 GIF 檔案</span>
+                <code>works/hs-anim-01.gif</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>高中動畫習作一</h4>
+              <p class="work-tools">工具：Procreate Dreams</p>
+              <p class="work-desc">說明這部動畫的故事內容、製作過程與當時的學習狀態，請替換為真實內容。</p>
+            </div>
+          </div>
+
+          <!-- 高中作品二：MP4 影片格式範例 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <video class="media-video" controls preload="metadata"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <source src="works/hs-anim-02.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放
+              </video>
+              <div class="media-placeholder">
+                <span>請放入影片檔案</span>
+                <code>works/hs-anim-02.mp4</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>高中動畫習作二</h4>
+              <p class="work-tools">工具：Procreate Dreams</p>
+              <p class="work-desc">說明這部動畫的故事內容、製作過程與當時的學習狀態，請替換為真實內容。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ── 動態作品 · 大學階段 ── -->
+      <div class="tab-panel" id="tab-anim-uni">
+        <p class="stage-desc">大學期間的動畫作品，可看出技術與表達力的明顯提升。</p>
+        <div class="works-grid">
+
+          <!-- 大學作品一：MP4 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <video class="media-video" controls preload="metadata"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <source src="works/uni-anim-01.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放
+              </video>
+              <div class="media-placeholder">
+                <span>請放入影片檔案</span>
+                <code>works/uni-anim-01.mp4</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>大學動畫作品一</h4>
+              <p class="work-tools">工具：Tahoma 2D · Adobe After Effects</p>
+              <p class="work-desc">說明這部動畫的故事、製作流程、個人負責部分與學習心得，請替換為真實內容。</p>
+            </div>
+          </div>
+
+          <!-- 大學作品二：MP4 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <video class="media-video" controls preload="metadata"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <source src="works/uni-anim-02.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放
+              </video>
+              <div class="media-placeholder">
+                <span>請放入影片檔案</span>
+                <code>works/uni-anim-02.mp4</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>大學動畫作品二</h4>
+              <p class="work-tools">工具：OpenToonz · Clip Studio Paint</p>
+              <p class="work-desc">說明這部動畫的故事、製作流程、個人負責部分與學習心得，請替換為真實內容。</p>
+            </div>
+          </div>
+
+          <!-- 大學作品三：MP4 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <video class="media-video" controls preload="metadata"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <source src="works/uni-anim-03.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放
+              </video>
+              <div class="media-placeholder">
+                <span>請放入影片檔案</span>
+                <code>works/uni-anim-03.mp4</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>大學動畫作品三</h4>
+              <p class="work-tools">工具：Procreate Dreams · After Effects</p>
+              <p class="work-desc">說明這部動畫的故事、製作流程、個人負責部分與學習心得，請替換為真實內容。</p>
+            </div>
+          </div>
+
+          <!-- 大學作品四：MP4 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <video class="media-video" controls preload="metadata"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <source src="works/uni-anim-04.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放
+              </video>
+              <div class="media-placeholder">
+                <span>請放入影片檔案</span>
+                <code>works/uni-anim-04.mp4</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>大學動畫作品四</h4>
+              <p class="work-tools">工具：請填入使用工具</p>
+              <p class="work-desc">說明這部動畫的故事、製作流程、個人負責部分與學習心得，請替換為真實內容。</p>
+            </div>
+          </div>
+
+          <!-- 大學作品五：MP4 -->
+          <div class="work-card anim-card">
+            <div class="media-wrap">
+              <video class="media-video" controls preload="metadata"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <source src="works/uni-anim-05.mp4" type="video/mp4" />
+                您的瀏覽器不支援影片播放
+              </video>
+              <div class="media-placeholder">
+                <span>請放入影片檔案</span>
+                <code>works/uni-anim-05.mp4</code>
+              </div>
+            </div>
+            <div class="work-info">
+              <h4>大學動畫作品五</h4>
+              <p class="work-tools">工具：請填入使用工具</p>
+              <p class="work-desc">說明這部動畫的故事、製作流程、個人負責部分與學習心得，請替換為真實內容。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       區塊五｜未來規劃 + 聯絡我
+  ══════════════════════════════ -->
+  <section id="future">
+    <div class="section-label-top">— 05 · Future Plans</div>
+    <div class="container future-grid">
+
+      <div class="future-left">
+        <h2 class="section-title">未來規劃</h2>
+
+        <div class="goal-block">
+          <div class="goal-icon">✦</div>
+          <div class="goal-text">
+            <h3>深化素描與人體解剖學</h3>
+            <p>
+              紮實的素描能力是動畫師的基礎。我的目標是系統性地學習人體解剖學，
+              理解肌肉結構、骨骼比例與動態規律，讓角色的動作更加自然可信。
+            </p>
+          </div>
+        </div>
+
+        <div class="goal-block">
+          <div class="goal-icon">語</div>
+          <div class="goal-text">
+            <h3>日語 N4 證照（一年內）</h3>
+            <p>
+              日本是全球最重要的動畫產業中心之一。取得 N4 不只是語言目標，
+              更是為將來接觸日本業界、閱讀原文資料做好準備。
+            </p>
+          </div>
+        </div>
+
+        <!-- 每日訓練規劃 -->
+        <div class="daily-plan">
+          <h3 class="plan-title">每日訓練計畫</h3>
+          <div class="plan-grid">
+
+            <div class="plan-item">
+              <span class="plan-time">每日 30 min</span>
+              <strong>人體速寫</strong>
+              <p>使用 Line of Action、Sketchdaily 練習動態人體速寫，培養快速捕捉姿態的能力</p>
+            </div>
+
+            <div class="plan-item">
+              <span class="plan-time">每日 20 min</span>
+              <strong>解剖學研讀</strong>
+              <p>搭配《Drawing on the Right Side of the Brain》及解剖學參考書，每週完成一個身體部位的深度研究</p>
+            </div>
+
+            <div class="plan-item">
+              <span class="plan-time">每日 30 min</span>
+              <strong>日語學習</strong>
+              <p>使用 Anki 背單字（每日 20 個新詞），配合 JLPT N4 文法書，週末完成一套模擬題組</p>
+            </div>
+
+            <div class="plan-item">
+              <span class="plan-time">每週 2 次</span>
+              <strong>動畫實作</strong>
+              <p>每次至少完成一個 12 格短片段，從 Walk Cycle 開始，逐步挑戰更複雜的動作與情緒表達</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 聯絡我 -->
+      <div class="future-right" id="contact">
+        <h2 class="section-title">聯絡我</h2>
+        <p class="contact-intro">歡迎交流創作、合作邀請或任何問題，可以透過以下方式找到我。</p>
+
+        <div class="contact-links">
+          <a href="mailto:1989625y@gmail.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>1989625y@gmail.com</span>
+          </a>
+          <a href="https://www.instagram.com/joooo.oo6/" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-icon">◈</span>
+            <span>@joooo.oo6</span>
+          </a>
+        </div>
+
+        <!-- 示範表單 -->
+        <form class="contact-form" onsubmit="return false;">
+          <p class="form-notice">⚠ 示範表單，無寄送功能</p>
+          <div class="form-group">
+            <label for="form-name">姓名</label>
+            <input type="text" id="form-name" placeholder="你的名字" />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="form-msg">訊息</label>
+            <textarea id="form-msg" rows="4" placeholder="想說的話..."></textarea>
+          </div>
+          <button type="submit" class="form-btn">送出訊息</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       Footer
+  ══════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 嚴幼喬 · Yen Yu-Chiao</p>
+      <p class="footer-note">Designed with AI assistance · Built with HTML / CSS / JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
