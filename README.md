@@ -6,7 +6,7 @@
 
 ## 🌐 網站連結
 
-部署後填入 GitHub Pages 連結
+[部署後填入 GitHub Pages 連結](https://1989625y-bit.github.io/jo1/)
 
 ---
 
